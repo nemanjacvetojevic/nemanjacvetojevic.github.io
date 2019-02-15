@@ -1,0 +1,44 @@
+  body {
+    margin: 0;
+    font-family: 'Montserrat';
+  }
+
+  .polymorph {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 19;
+    stroke-miterlimit: 10;
+    z-index: 99999;
+  }
+
+path {
+  fill: white;
+  z-index: 99999999;
+}
+
+.b-letter {
+  animation: fadein;
+
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100vh;
+    background: linear-gradient(to bottom,#f5b93c 0,#f34a37 100%);
+    z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+.loader {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+    position: fixed;
+}

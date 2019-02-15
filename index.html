@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="anime.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="loader-wrapper">
+    <div class="loader">
+      <?xml version="1.0" encoding="utf-8"?>
+
+      <svg viewBox="0 0 1366 768">
+
+        <polygon class="polymorph" points="685.5,377.8 685.5,343.1 625.5,308.5 625.5,343.1 625.5,377.8 655.5,395.1 		" />
+        <path class="letter-b" d="M603.1,334.5c3.4,0,6.2,1.2,8.6,3.6c2.4,2.4,3.6,5.3,3.6,8.6v24.4c0,3.3-1.2,6.2-3.6,8.6c-2.4,2.4-5.3,3.6-8.6,3.6h-37.3
+    v-64.9h12.9v16H603.1z M578.7,347.4v23.1h23.8v-23.1H578.7z" />
+        <path class="letter-e1" d="M659.1,334.5c3.4,0,6.2,1.2,8.6,3.6c2.4,2.4,3.6,5.3,3.6,8.6v18.7h-36.6v5.1h36.6v12.9H634c-3.3,0-6.2-1.2-8.6-3.6
+    c-2.4-2.4-3.6-5.3-3.6-8.6v-24.4c0-3.3,1.2-6.2,3.6-8.6c2.4-2.4,5.3-3.6,8.6-3.6H659.1z M634.7,354.1h23.8v-6.7h-23.8V354.1z" />
+        <path class="letter-t" d="M711.2,347.4h-18.1v23.1h18.1v12.9h-18.7c-3.4,0-6.3-1.2-8.7-3.6c-2.4-2.4-3.6-5.3-3.6-8.6V320h12.9v14.5h18.1V347.4z" />
+        <path class="letter-e2" d="M755.3,334.5c3.4,0,6.2,1.2,8.6,3.6c2.4,2.4,3.6,5.3,3.6,8.6v18.7h-36.6v5.1h36.6v12.9h-37.3c-3.3,0-6.2-1.2-8.6-3.6
+    c-2.4-2.4-3.6-5.3-3.6-8.6v-24.4c0-3.3,1.2-6.2,3.6-8.6c2.4-2.4,5.3-3.6,8.6-3.6H755.3z M730.9,354.1h23.8v-6.7h-23.8V354.1z" />
+        <path class="letter-c" d="M823.7,347.4h-36.6v23.1h36.6v12.9h-37.3c-3.3,0-6.2-1.2-8.6-3.6c-2.4-2.4-3.6-5.3-3.6-8.6v-24.4c0-3.3,1.2-6.2,3.6-8.6
+    c2.4-2.4,5.3-3.6,8.6-3.6h37.2V347.4z" />
+        <path class="letter-h" d="M867.9,334.5c3.3,0,6.2,1.2,8.6,3.6c2.4,2.4,3.6,5.3,3.6,8.6v36.6h-12.9v-36h-23.8v36h-12.9v-64.9h12.9v16H867.9z" />
+
+      </svg>
+    </div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+<div id="content">
+  <h2>This is our page title</h2>
+  <p>Lorem ipsum dolor sit amet.</p>
+</div>
+  <script>
+    let logo = anime.timeline();
+    logo
+      .add({
+        targets: '.polymorph',
+        points: [{
+            value: '684.5,377.8 684.5,343.1 684.5,308.5 625.5,343.1 625.5,377.8 655.5,395.1'
+          },
+          {
+            value: '566,377.8 566,343.1 566,308.5 625.5,343.1 625.5,377.8 595.2,395.1'
+          },
+          {
+            value: '552.9,387.6 552.9,339.8 552.9,292.2 637,339.8 637,387.6 594.9,411.4'
+          },
+          {
+            value: '564.4,377.8 564.4,343.1 564.4,308.5 625.5,343.1 625.5,377.8 594.9,395.1'
+          }
+
+        ],
+        easing: 'easeOutQuad',
+        duration: 1500,
+        loop: false
+      })
+      .add({
+        targets: '.letter-b',
+        translateX: 75,
+        //rotate: '1turn',
+        opacity: [0, 1],
+        easing: 'easeOutQuad',
+        duration: 100,
+        loop: false
+      })
+      .add({
+        targets: '.letter-e1',
+        translateX: 75,
+        //rotate: {value:'1turn',easing:'easeInOutSine'},
+        opacity: [0, 1],
+        easing: 'easeOutQuad',
+        duration: 100,
+        loop: false
+      },'-=50')
+      .add({
+        targets: '.letter-t',
+        translateX: 75,
+        //rotate: {value:'1turn',easing:'easeInOutSine'},
+        opacity: [0, 1],
+        easing: 'easeOutQuad',
+        duration: 100,
+        loop: false
+      },'-=50')
+      .add({
+        targets: '.letter-e2',
+        translateX: 75,
+        //rotate: {value:'1turn',easing:'easeInOutSine'},
+        opacity: [0, 1],
+        easing: 'easeOutQuad',
+        duration: 100,
+        loop: false
+      },'-=50')
+      .add({
+        targets: '.letter-c',
+        //rotate: {value:'1turn',easing:'easeInOutSine'},
+        translateX: 75,
+        opacity: [0, 1],
+        easing: 'easeOutQuad',
+        duration: 100,
+        loop: false
+      },'-=50')
+      .add({
+        targets: '.letter-h',
+        translateX: 75,
+        //rotateX: {value:'1turn',easing:'easeInOutSine'},
+        opacity: [0, 1],
+        easing: 'easeOutQuad',
+        duration: 100,
+        loop: false
+      })
+      .add({
+        targets: ['.polymorph','.letter-b','.letter-e1','.letter-t','.letter-e2','.letter-c','.letter-h'],
+        opacity:[1,0],
+        duration: 1000,
+        easing: 'easeOutQuad',
+        loop: false
+      })
+      .add({
+        targets:['#loader-wrapper .loader-section.section-right'],
+        translateX:'100%',
+        duration: 1000,
+        easing: 'easeOutQuad',
+        loop: false
+      })
+      .add({
+        targets:['#loader-wrapper .loader-section.section-left'],
+        translateX:'-100%',
+        duration: 1000,
+        easing: 'easeOutQuad',
+        loop: false
+      },'-=1000');
+  </script>
+</body>
+
+</html>
